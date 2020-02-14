@@ -1,0 +1,27 @@
+{
+  "name": "node-vue-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caijinghang666/node-vue-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caijinghang666/node-vue-chat/issues"
+  },
+  "homepage": "https://github.com/caijinghang666/node-vue-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "socket.io": "^2.3.0",
+    "ws": "^7.2.1"
+  }
+}
