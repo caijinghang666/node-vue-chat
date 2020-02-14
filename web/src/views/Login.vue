@@ -24,10 +24,10 @@ export default {
     },
     login(){
       if(this.usernameinput!=""){
-        this.$socket.emit('new_user',this.usernameinput,(data,callback)=>{
-        if(data){
+        this.$socket.emit('new_user',this.usernameinput,(data)=>{
+        if(data==false){
           console.log(data)
-          this.dialogTableVisible=callback;
+          this.dialogTableVisible=data;
           this.$emit("spot", this.usernameinput)
           
         }

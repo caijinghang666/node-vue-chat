@@ -34,10 +34,11 @@ io.sockets.on('connection',(s)=>{
     });
     //登录添加用户
     s.on('new_user',(data,callback)=>{
+        //找到的情况
         if(users.indexOf(data)!=-1){
-            callback(false);
-        }else{
             callback(true);
+        }else{
+            callback(false);
             s.username = data;
             users.push(s.username);
             console.log('当前用户数为： %s',users.length)  
